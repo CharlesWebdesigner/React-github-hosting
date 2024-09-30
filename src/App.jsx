@@ -1,7 +1,7 @@
-import { GITHUB_USERNAME, GITHUB_TOKEN } from "../../secret";
+import { GITHUB_USERNAME, GITHUB_TOKEN } from "../secret";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import RepoList from "./components/RepoList";
 import FollowersList from "./components/FollowersList";
 import FollowingList from "./components/FollowingList";
@@ -9,7 +9,8 @@ import ComparisonTab from "./components/ComparisonTab";
 import Spinner from "./components/Spinner";
 import { NavLink } from "react-router-dom";
 import "./App.css";
-
+// const GITHUB_USERNAME = process.env.GITHUB_USERNAME;
+// const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
 function App() {
   const [repos, setRepos] = useState([]);
   const [followers, setFollowers] = useState([]);

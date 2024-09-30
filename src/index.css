@@ -1,0 +1,48 @@
+* {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: aliceblue;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: white;
+}
+button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+.open {
+  width: 473px;
+  margin: 0 auto;
+  overflow: hidden;
+  color: blueviolet;
+  display: inline-flex;
+  animation-name: open;
+}
+@keyframes open {
+  from {
+    width: 0;
+  }
+}
+/* Mobile Styles */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .navbar a {
+    margin-bottom: 10px;
+  }
+}

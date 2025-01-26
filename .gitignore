@@ -10,7 +10,6 @@ lerna-debug.log*
 .env
 secret.js
 node_modules
-dist
 dist-ssr
 *.local
 
